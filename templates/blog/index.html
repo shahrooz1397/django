@@ -2,6 +2,10 @@
 {% block body_block %}
     <h1>Wellcome!</h1>
     <div class="container">
-
+        {% for p in posts %}
+            <h1>{{ p.title }}</h1>
+            <h3>{{ p.author }}on {{ p.date_posted }}</h3>
+            <p>{{ p.content }}</p>
+        {% endfor %}
     </div>
 {% endblock %}
