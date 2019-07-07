@@ -4,7 +4,7 @@
     <div class="container">
         {% for p in posts %}
             <h1>{{ p.title }}</h1>
-            <h3>{{ p.author }}on {{ p.date_posted }}</h3>
+            <h3>{{ p.author }} on {{ p.date_posted|date:'Y, F, d' }}</h3>
             <p>{{ p.content }}</p>
         {% endfor %}
     </div>
