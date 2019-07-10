@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,5 @@ STATICFILES_DIRS = [
         STATIC_DIR,
         '/var/www/static/',
         ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
